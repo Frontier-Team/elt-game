@@ -8,31 +8,22 @@ namespace Editor.Scripts
     [CustomEditor(typeof(CameraBoundsGridDebug))]
     public class CameraBoundsGridDebugEditor : UnityEditor.Editor
     {
-        private void OnSceneGUI()
+        public override void OnInspectorGUI()
         {
-            var grid = target as CameraBoundsGridDebug;
+            var grid = (CameraBoundsGridDebug)target;
 
-            if (grid.camera == null || !grid.camera.orthographic)
+            EditorGUILayout.LabelField("Camera Grid Debug", EditorStyles.boldLabel);
+
+            grid.showGrid = EditorGUILayout.Toggle("Show Grid", grid.showGrid);
+            grid.camera = (Camera)EditorGUILayout.ObjectField("Target Camera", grid.camera, typeof(Camera), true);
+            grid.gridLeft = EditorGUILayout.IntField("Pages Left", grid.gridLeft);
+            grid.gridRight = EditorGUILayout.IntField("Pages Right", grid.gridRight);
+            grid.gridColor = EditorGUILayout.ColorField("Grid Color", grid.gridColor);
+
+            if (GUI.changed)
             {
-                return;
-            }
-
-            var camera = grid.camera;
-            var camHeight = camera.orthographicSize * 2f;
-            var camWidth = camHeight * camera.aspect;
-            var yMin = camera.transform.position.y - camHeight;
-            var yMax = camera.transform.position.y + camHeight;
-
-            Handles.color = grid.gridColor;
-
-            for (var i = -grid.gridLeft; i <= grid.gridRight; i++)
-            {
-                var pageCenterX = i * camWidth;
-                var xLeft = pageCenterX - camWidth / 2f;
-                var xRight = pageCenterX + camWidth / 2f;
-                
-                Handles.DrawLine(new Vector3(xLeft, yMin, 0), new Vector3(xLeft, yMax, 0));
-                Handles.DrawLine(new Vector3(xRight, yMin, 0), new Vector3(xRight, yMax, 0));
+                EditorUtility.SetDirty(grid);
+                SceneView.RepaintAll();
             }
         }
     }
