@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3739341442928787729}
   - component: {fileID: 7527745996202888683}
   - component: {fileID: 1874163953899779639}
+  - component: {fileID: 969031182589222205}
   m_Layer: 6
   m_Name: PickupBase
   m_TagString: Interactable
@@ -142,6 +143,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.25
+--- !u!114 &969031182589222205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2994712362034950733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16d6061645d14923ac727e032664853b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voteId: 0
+  voteSummary: 5 word summary
+  voteDescription: Long form description
+  characterName: Character name
 --- !u!1 &8459041846593687710
 GameObject:
   m_ObjectHideFlags: 0

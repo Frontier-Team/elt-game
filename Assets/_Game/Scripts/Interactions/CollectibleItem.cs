@@ -8,10 +8,11 @@ namespace _Game.Scripts.Interactions
 {
     public class CollectibleItem : MonoBehaviour, IInteractable, ICollectable
     {
-        [TextArea(3, 6)]
-        [SerializeField] private string PopupText;
+        private string popupText;
         private UIPopup popup;
         private PlayerMovementControllerMouse player;
+        private CharacterVote characterVote;
+        
         [SerializeField] private bool destroyOnCollect;
         [SerializeField] private Canvas textCanvas;
         [SerializeField] private bool disableTextOnClick = true;
@@ -23,6 +24,8 @@ namespace _Game.Scripts.Interactions
             player = FindFirstObjectByType<PlayerMovementControllerMouse>();
             popup = FindFirstObjectByType<UIPopup>();
             textAnim = GetComponentInChildren<Animator>();
+            characterVote = GetComponent<CharacterVote>();
+            
             if (textAnim != null)
             {
                 textAnim.Play("Start", 0, Random.Range(0f, 1f));
@@ -45,7 +48,7 @@ namespace _Game.Scripts.Interactions
 
         public void Interact()
         {
-            popup.UpdateTextElement(PopupText);
+            popup.UpdateTextElement(popupText);
             popup.ShowPage();
             if (destroyOnCollect)
             {

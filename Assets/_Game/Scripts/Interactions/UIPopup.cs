@@ -1,5 +1,6 @@
 using Core.Scripts.Audio;
 using UnityEngine;
+using UnityEngine.UI;
 using AudioType = Core.Scripts.Audio.AudioType;
 
 namespace _Game.Scripts.Interactions

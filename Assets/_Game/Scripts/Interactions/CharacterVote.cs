@@ -9,9 +9,11 @@ namespace _Game.Scripts.Interactions
         
         [SerializeField] private int voteId = 0;
         [SerializeField] private string voteSummary = "5 word summary";
+        [TextArea(3, 6)]
         [SerializeField] private string voteDescription = "Long form description";
         [SerializeField] private string characterName = "Character name";
-
+        [SerializeField] private Sprite characterSprite;
+        
         public int VoteId => voteId;
         public string VoteSummary => voteSummary;
         public string CharacterName => characterName;
