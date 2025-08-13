@@ -754,6 +754,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: obPostbox
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 21
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db42dcf459592146831ee1f15bfac63
+      internalID: -350534130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: objExclaim
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 59
+        width: 5
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365e9043c01257b4b86ecde41e0e3a9e
+      internalID: 114521813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -769,6 +813,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Objects_1: 251786038
+      obPostbox: -350534130
       objBench: -340077772
       objChessPiece: 928400585
       objChest: 7642980859614939925
@@ -780,6 +825,7 @@ TextureImporter:
       objComputerSmall: 869687194
       objCone: 2020115666
       objDoc: 355429817
+      objExclaim: 114521813
       objGamepad: 293262838
       objGate: 1254376797
       objHourglass: 1576456164
