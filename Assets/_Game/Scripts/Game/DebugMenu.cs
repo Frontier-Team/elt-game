@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using _Game.Scripts.Game;
 using _Game.Scripts.Interactions;
 using TMPro;
 using UnityEngine;

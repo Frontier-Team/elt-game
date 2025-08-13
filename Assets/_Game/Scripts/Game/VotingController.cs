@@ -1,20 +1,49 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using _Game.Scripts.Interactions;
 using UnityEngine;
 using UnityEngine.Networking;
 using Utils;
 
-namespace _Game.Scripts.Interactions
+namespace _Game.Scripts.Game
 {
     public class VotingController : MonoBehaviour
     {
+        public event Action OnVoteAllowed;
+        public event Action OnVoteMade;
+        
         public bool CanVote { get; private set; } = true;
         public bool HasVoted { get; private set; } = false;
-        public int VoteChoice { get; private set; }
+        public int VoteChoiceIndex { get; private set; }
 
         [SerializeField] private string voteApiHost = "https://voting-system-lyart.vercel.app";
         [SerializeField] private string voteApiPath = "/api/vote/";
-        
+        [SerializeField] private int retryRequestAmount = 3;
+        [SerializeField] private int retryTimeoutInMs = 200;
+
+        [SerializeField] private List<CharacterVote> characterVotes = new();
+        private HashSet<int> viewedVoteItems = new();
+
+        private void Awake()
+        {
+            foreach (var item in characterVotes)
+            {
+                item.OnVoteDescriptionViewed += HandleOnVoteDescriptionViewed;
+            }
+        }
+
+        private void HandleOnVoteDescriptionViewed(int voteIndex)
+        {
+            viewedVoteItems.Add(voteIndex);
+
+            if (viewedVoteItems.Count == characterVotes.Count)
+            {
+                EnableVoting();
+                OnVoteAllowed?.Invoke();
+            }
+        }
+
         public void EnableVoting()
         {
             CanVote = true;
@@ -28,7 +57,7 @@ namespace _Game.Scripts.Interactions
         public void ResetVote()
         {
             HasVoted = false;
-            VoteChoice = default;
+            VoteChoiceIndex = default;
         }
 
         public async Task<bool> PostVote(int voteId)
@@ -39,9 +68,9 @@ namespace _Game.Scripts.Interactions
             }
             
             var url = $"{voteApiHost}{voteApiPath}{voteId}";
-            var delayMs = 200;
+            var delayMs = retryTimeoutInMs;
 
-            for (var attempt = 1; attempt <= 3; attempt++)
+            for (var attempt = 1; attempt <= retryRequestAmount; attempt++)
             {
                 using var req = UnityWebRequest.PostWwwForm(url, string.Empty);
                 await req.SendWebRequest().AsTask();
@@ -49,8 +78,9 @@ namespace _Game.Scripts.Interactions
                 if (req.result == UnityWebRequest.Result.Success)
                 {
                     HasVoted = true;
-                    VoteChoice = voteId;
+                    VoteChoiceIndex = voteId;
                     DisableVoting();
+                    OnVoteMade?.Invoke();
                     return true;
                 }
 
@@ -58,7 +88,7 @@ namespace _Game.Scripts.Interactions
                                 || req.result == UnityWebRequest.Result.DataProcessingError
                                 || (req.result == UnityWebRequest.Result.ProtocolError && req.responseCode >= 500);
 
-                if (!retryable || attempt == 3)
+                if (!retryable || attempt == retryRequestAmount)
                     return false;
 
                 await Task.Delay(delayMs);
