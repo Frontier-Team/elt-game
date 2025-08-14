@@ -34,10 +34,10 @@ RectTransform:
   - {fileID: 8572230537119502453}
   m_Father: {fileID: 177074980496868452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -20}
-  m_SizeDelta: {x: 187.5, y: 20}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &5849203873859422923
 CanvasRenderer:
@@ -167,10 +167,10 @@ RectTransform:
   - {fileID: 9047213367238251802}
   m_Father: {fileID: 177074980496868452}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 187.5, y: 20}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &5527412641855846265
 CanvasRenderer:
@@ -283,7 +283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3046254665071545518
 RectTransform:
   m_ObjectHideFlags: 0
@@ -411,8 +411,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Previous
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 68746c3e0d87b4fff960d4db94b1cf98, type: 2}
-  m_sharedMaterial: {fileID: -7248687785898948521, guid: 68746c3e0d87b4fff960d4db94b1cf98, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6851874908b444efaa28171712a43735, type: 2}
+  m_sharedMaterial: {fileID: -2291911101497751033, guid: 6851874908b444efaa28171712a43735, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -436,8 +436,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -768,8 +768,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 20}
-  m_SizeDelta: {x: -160, y: -200}
+  m_AnchoredPosition: {x: 0, y: 3.70401}
+  m_SizeDelta: {x: -110, y: -142.592}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6318858487714248623
 CanvasRenderer:
@@ -799,10 +799,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: This is a really long line of text that the game will render on multiple
+    pages. I am testing what happens when things overflow beyond a single page to
+    see if they are still readable on the aspect ratio.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 68746c3e0d87b4fff960d4db94b1cf98, type: 2}
-  m_sharedMaterial: {fileID: -7248687785898948521, guid: 68746c3e0d87b4fff960d4db94b1cf98, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6851874908b444efaa28171712a43735, type: 2}
+  m_sharedMaterial: {fileID: -2291911101497751033, guid: 6851874908b444efaa28171712a43735, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -826,8 +828,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -905,7 +907,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 96}
+  m_AnchoredPosition: {x: 0, y: 40.1}
   m_SizeDelta: {x: -200, y: 20}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &8353820117848065882
@@ -1001,8 +1003,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Next
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 68746c3e0d87b4fff960d4db94b1cf98, type: 2}
-  m_sharedMaterial: {fileID: -7248687785898948521, guid: 68746c3e0d87b4fff960d4db94b1cf98, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6851874908b444efaa28171712a43735, type: 2}
+  m_sharedMaterial: {fileID: -2291911101497751033, guid: 6851874908b444efaa28171712a43735, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1026,8 +1028,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

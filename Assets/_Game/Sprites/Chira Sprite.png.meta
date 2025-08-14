@@ -335,6 +335,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: chira-HEAD
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 12
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1f379fe42e544e585971914e6e3b21
+      internalID: -1512160694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -357,6 +379,7 @@ TextureImporter:
       ChiraR2: 2849459804453488137
       Chira_Down: -7954191676068200522
       Chira_Up: 4017182536825888768
+      chira-HEAD: -1512160694
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
