@@ -19,7 +19,7 @@ namespace _Game.Scripts.Interactions
         public bool IsEnabled = false;
         protected int CurrentPage = 1;
 
-        private void Start()
+        protected virtual void Start()
         {
             ResetTextElement();
         }

@@ -13,8 +13,9 @@ namespace _Game.Scripts.Interactions
 
         public bool IsShown { get; private set; } = false;
         
-        private void Start()
+        protected override void Start()
         {
+            base.Start();
         }
 
         public override void ShowPage()

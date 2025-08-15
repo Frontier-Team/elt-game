@@ -18,6 +18,7 @@ public class DebugMenu : MonoBehaviour
     [SerializeField] private TMP_Text voteLabel;
     [SerializeField] private Button voteButton;
     [SerializeField] private Toggle hasVotedToggle;
+    [SerializeField] private Toggle forceCanVote;
 
     private VotingController debugVoteController;
     private bool sending;
@@ -29,6 +30,7 @@ public class DebugMenu : MonoBehaviour
 
         hasVotedToggle.interactable = false;
         voteChoice.onValueChanged.AddListener(UpdateVoteIdLabel);
+        forceCanVote.onValueChanged.AddListener(ForceCanVote);
         voteButton.interactable = debugVoteController.CanVote;
         hasVotedToggle.isOn = debugVoteController.HasVoted;
     }
@@ -77,6 +79,18 @@ public class DebugMenu : MonoBehaviour
         await Task.Delay(800);
 
         sending = false;
+    }
+
+    public void ForceCanVote(bool canVote)
+    {
+        if (canVote)
+        {
+            debugVoteController.EnableVoting();
+        }
+        else
+        {
+            debugVoteController.DisableVoting();
+        }
     }
 
     public void OnClose() => debugRoot.SetActive(false);

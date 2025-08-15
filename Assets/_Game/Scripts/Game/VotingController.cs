@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using _Game.Scripts.Interactions;
 using UnityEngine;
@@ -12,8 +13,8 @@ namespace _Game.Scripts.Game
     {
         public event Action OnVoteAllowed;
         public event Action OnVoteMade;
-        
-        public bool CanVote { get; private set; } = true;
+
+        public bool CanVote { get; private set; } = false;
         public bool HasVoted { get; private set; } = false;
         public int VoteChoiceIndex { get; private set; }
 
@@ -23,13 +24,27 @@ namespace _Game.Scripts.Game
         [SerializeField] private int retryTimeoutInMs = 200;
 
         [SerializeField] private List<CharacterVote> characterVotes = new();
-        private HashSet<int> viewedVoteItems = new();
+        public List<CharacterVote> CharacterVotes => characterVotes;
+        private readonly HashSet<int> viewedVoteItems = new();
 
         private void Awake()
         {
+            if (characterVotes == null || characterVotes.Count == 0)
+            {
+                characterVotes = FindObjectsByType<CharacterVote>(FindObjectsSortMode.None).ToList();
+            }
+
             foreach (var item in characterVotes)
             {
                 item.OnVoteDescriptionViewed += HandleOnVoteDescriptionViewed;
+            }
+        }
+
+        private void OnDestroy()
+        {
+            foreach (var item in characterVotes)
+            {
+                item.OnVoteDescriptionViewed -= HandleOnVoteDescriptionViewed;
             }
         }
 
@@ -58,6 +73,8 @@ namespace _Game.Scripts.Game
         {
             HasVoted = false;
             VoteChoiceIndex = default;
+            viewedVoteItems.Clear();
+            DisableVoting();
         }
 
         public async Task<bool> PostVote(int voteId)
@@ -66,7 +83,7 @@ namespace _Game.Scripts.Game
             {
                 return false;
             }
-            
+
             var url = $"{voteApiHost}{voteApiPath}{voteId}";
             var delayMs = retryTimeoutInMs;
 
@@ -89,7 +106,9 @@ namespace _Game.Scripts.Game
                                 || (req.result == UnityWebRequest.Result.ProtocolError && req.responseCode >= 500);
 
                 if (!retryable || attempt == retryRequestAmount)
+                {
                     return false;
+                }
 
                 await Task.Delay(delayMs);
                 delayMs *= 2;
@@ -97,6 +116,5 @@ namespace _Game.Scripts.Game
 
             return false;
         }
-
     }
 }
