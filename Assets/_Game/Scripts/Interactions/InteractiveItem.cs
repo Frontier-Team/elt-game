@@ -65,7 +65,7 @@ namespace _Game.Scripts.Interactions
 
             if (characterVote != null)
             {
-                popupText = $"{characterVote.CharacterName}: \n\n{characterVote.VoteSummary}\n\n{characterVote.VoteDescription}";
+                popupText = $"{characterVote.CharacterName}: \n\n\n{characterVote.VoteSummary}\n\n\n{characterVote.VoteDescription}";
             }
 
             if (popup != null && player != null)
