@@ -19,6 +19,8 @@ namespace Editor.Scripts
             grid.gridLeft = EditorGUILayout.IntField("Pages Left", grid.gridLeft);
             grid.gridRight = EditorGUILayout.IntField("Pages Right", grid.gridRight);
             grid.gridColor = EditorGUILayout.ColorField("Grid Color", grid.gridColor);
+            grid.showEdgeTriggers = EditorGUILayout.Toggle("Show Edge Triggers", grid.showEdgeTriggers);
+            grid.triggerWidthPixels = EditorGUILayout.FloatField("Edge Trigger Width", grid.triggerWidthPixels);
 
             if (GUI.changed)
             {

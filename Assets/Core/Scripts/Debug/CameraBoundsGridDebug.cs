@@ -10,5 +10,7 @@ namespace Core.Scripts.Debug
         public int gridLeft = 20;
         public int gridRight = 20;
         public Color gridColor = Color.red;
+        public bool showEdgeTriggers = true;
+        public float triggerWidthPixels = 30f;
     }
 }

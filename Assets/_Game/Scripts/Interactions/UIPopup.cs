@@ -1,4 +1,5 @@
 using Core.Scripts.Audio;
+using Unity.Plastic.Newtonsoft.Json.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 using AudioType = Core.Scripts.Audio.AudioType;
@@ -10,7 +11,7 @@ namespace _Game.Scripts.Interactions
         [SerializeField] private GameObject rootPopup;
         [SerializeField] private AudioClip sfxUIOpen;
         [SerializeField] private AudioClip sfxUIClose;
-
+        
         public bool IsShown { get; private set; } = false;
         
         protected override void Start()

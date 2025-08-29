@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 namespace _Game.Scripts.Interactions
 {
@@ -12,26 +13,63 @@ namespace _Game.Scripts.Interactions
         public event Action OnNextPage;
         public event Action OnPreviousPage;
         public event Action OnUpdateText;
+        public event Action OnLastPage;
         
         [SerializeField] protected TMP_Text uiTextElement;
         [SerializeField] protected Button nextPageButton;
         [SerializeField] protected Button previousPageButton;
         public bool IsEnabled = false;
         protected int CurrentPage = 1;
+        private bool wasOnLastPage = false;
+
+        private InputAction escapeAction;
 
         protected virtual void Start()
         {
             ResetTextElement();
+
+            escapeAction = new InputAction(binding: "<Keyboard>/escape");
+            escapeAction.performed += _ =>
+            {
+                if (IsEnabled)
+                {
+                    HidePage();
+                }
+            };
+            escapeAction.Enable();
+        }
+
+        protected virtual void OnDestroy()
+        {
+            if (escapeAction != null)
+            {
+                escapeAction.Disable();
+                escapeAction.Dispose();
+            }
         }
 
         public virtual void ShowPage()
         {
             IsEnabled = true;
             OnShowPage?.Invoke();
+
+            uiTextElement.ForceMeshUpdate();
+
+            CurrentPage = uiTextElement.pageToDisplay;
+
+            var onLast = uiTextElement.textInfo.pageCount > 0 &&
+                         CurrentPage == uiTextElement.textInfo.pageCount;
+
+            if (onLast && !wasOnLastPage)
+            {
+                OnLastPage?.Invoke();
+                wasOnLastPage = true;
+            }
         }
 
         public virtual void HidePage()
         {
+            IsEnabled = false;
             OnHidePage?.Invoke();
         }
 
@@ -41,9 +79,10 @@ namespace _Game.Scripts.Interactions
             {
                 return;
             }
+
             CurrentPage = uiTextElement.pageToDisplay;
-            
-            if (uiTextElement.textInfo.pageCount > 1 && 
+
+            if (uiTextElement.textInfo.pageCount > 1 &&
                 CurrentPage > 1)
             {
                 nextPageButton.interactable = true;
@@ -70,14 +109,25 @@ namespace _Game.Scripts.Interactions
                 previousPageButton.interactable = true;
                 nextPageButton.interactable = false;
             }
+
+            var onLast = uiTextElement.textInfo.pageCount > 0 &&
+                         CurrentPage == uiTextElement.textInfo.pageCount;
+
+            if (onLast && !wasOnLastPage)
+            {
+                OnLastPage?.Invoke();
+            }
+
+            wasOnLastPage = onLast;
         }
-        
+
         public virtual void NextPage()
         {
             if (uiTextElement.textInfo.pageCount > CurrentPage)
             {
                 uiTextElement.pageToDisplay++;
             }
+
             OnNextPage?.Invoke();
         }
 
@@ -87,12 +137,17 @@ namespace _Game.Scripts.Interactions
             {
                 uiTextElement.pageToDisplay--;
             }
+
             OnPreviousPage?.Invoke();
         }
 
         public virtual void UpdateTextElement(string text)
         {
             uiTextElement.text = text;
+            uiTextElement.ForceMeshUpdate();
+
+            wasOnLastPage = false;
+
             OnUpdateText?.Invoke();
         }
 
@@ -101,6 +156,8 @@ namespace _Game.Scripts.Interactions
             uiTextElement.text = string.Empty;
             CurrentPage = 1;
             uiTextElement.pageToDisplay = 1;
+            wasOnLastPage = false;
+
             OnUpdateText?.Invoke();
         }
     }

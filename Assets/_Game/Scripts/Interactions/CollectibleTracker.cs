@@ -11,7 +11,7 @@ namespace _Game.Scripts.Game
         public event Action OnCollectedAll; 
         public static CollectibleTracker Instance;
         
-        [SerializeField] private List<CollectibleItem> collectiblesToCollect;
+        [SerializeField] private List<InteractiveItem> collectiblesToCollect;
         private HashSet<ICollectable> collectedItems = new();
 
         private void Start()
