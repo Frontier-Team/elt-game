@@ -1,5 +1,4 @@
 using Core.Scripts.Audio;
-using Unity.Plastic.Newtonsoft.Json.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 using AudioType = Core.Scripts.Audio.AudioType;

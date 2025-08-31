@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
   m_Name: Adrian-Vote 1
   m_EditorClassIdentifier: 
-  characterImage: {fileID: 0}
+  characterImage: {fileID: -2055147526, guid: 4527acccdabc67a48a3e2427a7f2224d, type: 3}
   voteId: 0
   voteSummary: 5 word summary
   voteDescription: Long form description Long form descriptionLong form descriptionLong

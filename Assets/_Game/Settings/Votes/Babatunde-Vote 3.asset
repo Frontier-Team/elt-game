@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
   m_Name: Babatunde-Vote 3
   m_EditorClassIdentifier: 
-  characterImage: {fileID: 0}
+  characterImage: {fileID: 1498785976, guid: d54a92ac53602c2499203b0a420a45ce, type: 3}
   voteId: 2
   voteSummary: 5 word summary
   voteDescription: Long form description
-  characterName: Babatunde
+  characterName: Babs

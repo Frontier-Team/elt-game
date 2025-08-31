@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
   m_Name: Derek-Vote 6
   m_EditorClassIdentifier: 
-  characterImage: {fileID: 0}
+  characterImage: {fileID: -1786581824, guid: 42057e3e459cc2d4cbcd8a7b54179372, type: 3}
   voteId: 5
   voteSummary: 5 word summary
   voteDescription: Long form description

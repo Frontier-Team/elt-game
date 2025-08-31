@@ -147,7 +147,7 @@ TextureImporter:
         width: 67
         height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -160,11 +160,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Saravanan_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 67
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eda8b327248b1e42a2ebc07b6adef0f
+      internalID: 857671168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 59c6a659f28dd3f42aae75d07c4f1b2a
     internalID: 0
     vertices: []
     indices: 
@@ -175,6 +197,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Saravanan_0: -5486602927589375065
+      Saravanan_1: 857671168
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,7 @@ TextureImporter:
         width: 67
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -160,11 +160,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Amit_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 49
+        width: 67
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8c30d0e2f6f6449aad5466fe147349
+      internalID: 317004697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f42e4a430b9b6504db6a96cc4a2e7d36
     internalID: 0
     vertices: []
     indices: 
@@ -175,6 +197,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Amit_0: 2772752965736533822
+      Amit_1: 317004697
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

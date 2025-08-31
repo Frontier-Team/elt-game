@@ -147,7 +147,7 @@ TextureImporter:
         width: 75
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -160,11 +160,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Ursula_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 75
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a937b0cd93c6846bcee6bc76c50a99
+      internalID: -1274349734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 78999b7ab6bc69e418099ab471d5eae7
     internalID: 0
     vertices: []
     indices: 
@@ -175,6 +197,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Ursula_0: -7819299246257277147
+      Ursula_1: -1274349734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

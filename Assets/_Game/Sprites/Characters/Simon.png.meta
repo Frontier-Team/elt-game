@@ -147,7 +147,7 @@ TextureImporter:
         width: 67
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -160,11 +160,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Simon_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 44
+        width: 67
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7d7d70b6acb7442b7a20d0c13100f7
+      internalID: -1343564371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3ac0907d2eb3d6445b38045b44f969a4
     internalID: 0
     vertices: []
     indices: 
@@ -175,6 +197,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Simon_0: 3517921492900332525
+      Simon_1: -1343564371
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

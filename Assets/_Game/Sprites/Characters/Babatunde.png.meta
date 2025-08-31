@@ -147,7 +147,7 @@ TextureImporter:
         width: 67
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -160,11 +160,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Babatunde_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 67
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd55852a7eb5294ea3b72aed074a89b
+      internalID: 1498785976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0d5b24c8cc610304c855191762aec145
     internalID: 0
     vertices: []
     indices: 
@@ -175,6 +197,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Babatunde_0: -1649697507676172780
+      Babatunde_1: 1498785976
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
