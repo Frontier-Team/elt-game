@@ -50,6 +50,11 @@ namespace _Game.Scripts.Game
 
         private void HandleOnVoteDescriptionViewed(int voteIndex)
         {
+            if (HasVoted)
+            {
+                return;
+            }
+            
             viewedVoteItems.Add(voteIndex);
 
             if (viewedVoteItems.Count == characterVotes.Count)
@@ -62,6 +67,7 @@ namespace _Game.Scripts.Game
         public void EnableVoting()
         {
             CanVote = true;
+            OnVoteAllowed?.Invoke();
         }
 
         public void DisableVoting()
