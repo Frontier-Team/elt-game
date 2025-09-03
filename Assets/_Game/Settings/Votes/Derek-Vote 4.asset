@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
-  m_Name: Ursula-Vote 13
+  m_Name: Derek-Vote 4
   m_EditorClassIdentifier: 
-  characterImage: {fileID: -1274349734, guid: 7f7a0a46bcea5cc479c3b3a15f1d6b7e, type: 3}
-  voteId: 13
-  voteSummary: 
-  voteDescription: See our idea
-  characterName: Ursula
+  characterImage: {fileID: -1786581824, guid: 42057e3e459cc2d4cbcd8a7b54179372, type: 3}
+  voteId: 4
+  voteSummary: 'YCF examples of good '
+  voteDescription: 'Your Change Framework examples of what good looks like. Plenty
+    of documentation but there are no examples to help people know how to follow
+    the process. '
+  characterName: Derek

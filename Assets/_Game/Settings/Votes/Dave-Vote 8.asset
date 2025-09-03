@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
-  m_Name: Dave-Vote 5
+  m_Name: Dave-Vote 8
   m_EditorClassIdentifier: 
   characterImage: {fileID: -2024274491, guid: ff23a914746c69d49a54e7bfed74a198, type: 3}
-  voteId: 5
-  voteSummary: 
-  voteDescription: See our idea
+  voteId: 8
+  voteSummary: Time to learn
+  voteDescription: Encourage leadership to tell colleagues they need to book in the
+    time to learn as part of their working week . 80% for delivery the remaining
+    should be upskilling, designing , other, 20% mix
   characterName: Dave

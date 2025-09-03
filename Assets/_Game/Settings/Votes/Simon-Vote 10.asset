@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
-  m_Name: Simon-Vote 11
+  m_Name: Simon-Vote 10
   m_EditorClassIdentifier: 
   characterImage: {fileID: -1343564371, guid: 44309817f427b3c499d2b4d5e2211bc2, type: 3}
-  voteId: 11
-  voteSummary: 
-  voteDescription: See our idea
+  voteId: 10
+  voteSummary: Change with compassion
+  voteDescription: Our idea is to promote transparency and reduce uncertainty by
+    compressing the time between organisational announcements and outcomes. This
+    will reduce the stress on colleagues.
   characterName: Simon

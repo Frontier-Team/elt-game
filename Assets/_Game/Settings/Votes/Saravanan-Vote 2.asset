@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
+  m_Name: Saravanan-Vote 2
+  m_EditorClassIdentifier: 
+  characterImage: {fileID: 857671168, guid: 9f7e2e7df8a90104db3a1205f0dd6298, type: 3}
+  voteId: 2
+  voteSummary: Understanding the CJM role
+  voteDescription: 'Platform led sessions with an expert CJM to explain roles and
+    responsibilities of the CJM role with q and an opportunities to ensure this new
+    role is understood by all. '
+  characterName: Saravanan

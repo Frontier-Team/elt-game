@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
-  m_Name: Josh-Vote 7
+  m_Name: Babatunde-Vote 7
   m_EditorClassIdentifier: 
-  characterImage: {fileID: -37191973, guid: be0f62c5ef5f1b249b23dc4f20584331, type: 3}
+  characterImage: {fileID: 1498785976, guid: d54a92ac53602c2499203b0a420a45ce, type: 3}
   voteId: 7
-  voteSummary: 
-  voteDescription: See our idea
-  characterName: Josh
+  voteSummary: Championing your own learning
+  voteDescription: People should champion their own learning. Refining should protect
+    time lined up for learning. Leaders should challenge for learning to be championed.
+  characterName: Babs

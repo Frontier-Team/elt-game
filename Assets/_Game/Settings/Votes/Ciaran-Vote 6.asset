@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
-  m_Name: Ciaran-Vote 4
+  m_Name: Ciaran-Vote 6
   m_EditorClassIdentifier: 
   characterImage: {fileID: 1175906202, guid: c5465a2a3f4228d419a0810a742cbf54, type: 3}
-  voteId: 4
-  voteSummary: 
-  voteDescription: See our idea
+  voteId: 6
+  voteSummary: Protect and celebrate learning
+  voteDescription: Create protected time. Flexibility to ensure delivery. Advocate
+    and share learning to drive positive learning culture
   characterName: Ciaran

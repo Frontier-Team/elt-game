@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
-  m_Name: Adrian-Vote 1
+  m_Name: Ursula-Vote 5
   m_EditorClassIdentifier: 
-  characterImage: {fileID: -2055147526, guid: 4527acccdabc67a48a3e2427a7f2224d, type: 3}
-  voteId: 1
-  voteSummary: 
-  voteDescription: See our idea
-  characterName: Adrian
+  characterImage: {fileID: -1274349734, guid: 7f7a0a46bcea5cc479c3b3a15f1d6b7e, type: 3}
+  voteId: 5
+  voteSummary: Empowerment and efficiency
+  voteDescription: 'Delegate more authority to platforms to make decisions, approvals,
+    simplify processes and reduce bottlenecks '
+  characterName: Ursula

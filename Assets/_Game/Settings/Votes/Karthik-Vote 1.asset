@@ -10,10 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
-  m_Name: Karthik-Vote 8
+  m_Name: Karthik-Vote 1
   m_EditorClassIdentifier: 
   characterImage: {fileID: 233366162, guid: 5e568d32d99bcec4a8f9f2ad3bf3f16c, type: 3}
-  voteId: 8
-  voteSummary: 
-  voteDescription: See our idea
+  voteId: 1
+  voteSummary: Innovation week workshops
+  voteDescription: 'Use innovation week to run a series of workshops/trainings for
+    each role SE, QE, PO, CJM etc so that everyone is clear on their own role and
+    can network with others in wider teams. Can even have cross over in these events
+    so that roles fully understand the boundary of each other
+
+'
   characterName: Karthik

@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
-  m_Name: Nick-Vote 9
+  m_Name: Amit-Vote 3
   m_EditorClassIdentifier: 
-  characterImage: {fileID: -2037311440, guid: c0a587b78e31b704994f82e2b4d860b7, type: 3}
-  voteId: 9
-  voteSummary: 
-  voteDescription: See our idea
-  characterName: Nick
+  characterImage: {fileID: 317004697, guid: fbc22b8a7b67215428b86e123c6b70f0, type: 3}
+  voteId: 3
+  voteSummary: Drive role clarity
+  voteDescription: "Work across platforms to \u2018role play\u2019 from idea to run
+    working through all roles involved to drive clarity and consistency around who
+    does what.  Then publish."
+  characterName: Amit

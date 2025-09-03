@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
-  m_Name: Derek-Vote 6
+  m_Name: Josh-Vote 12
   m_EditorClassIdentifier: 
-  characterImage: {fileID: -1786581824, guid: 42057e3e459cc2d4cbcd8a7b54179372, type: 3}
-  voteId: 6
-  voteSummary: 
-  voteDescription: See our idea
-  characterName: Derek
+  characterImage: {fileID: -37191973, guid: be0f62c5ef5f1b249b23dc4f20584331, type: 3}
+  voteId: 12
+  voteSummary: The group strategy
+  voteDescription: 'We need to communicate then why on group strategy and standardisation
+    and how it will enable engineering creativity and greater ownership of delivery '
+  characterName: Josh

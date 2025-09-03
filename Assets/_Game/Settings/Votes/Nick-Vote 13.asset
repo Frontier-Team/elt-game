@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
-  m_Name: Amit-Vote 2
+  m_Name: Nick-Vote 13
   m_EditorClassIdentifier: 
-  characterImage: {fileID: 317004697, guid: fbc22b8a7b67215428b86e123c6b70f0, type: 3}
-  voteId: 2
-  voteSummary: 
-  voteDescription: See our idea
-  characterName: Amit
+  characterImage: {fileID: -2037311440, guid: c0a587b78e31b704994f82e2b4d860b7, type: 3}
+  voteId: 13
+  voteSummary: Setting dates
+  voteDescription: Dates should be set based on historical data of past delivery
+    performance. POs need to make decisions with consultation and reference to data
+  characterName: Nick

@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70781ee3dea448d7b78a776ffb67401c, type: 3}
-  m_Name: Stacey-Vote 12
+  m_Name: Stacey-Vote 11
   m_EditorClassIdentifier: 
   characterImage: {fileID: -361441977, guid: cf357bd2d5c398f4e8cd593033ee6ed7, type: 3}
-  voteId: 12
-  voteSummary: 
-  voteDescription: See our idea
+  voteId: 11
+  voteSummary: Professional Writer Agent
+  voteDescription: "Ensure communications are targeted, relevant and authentic for
+    the audience by utilising I\u2019ll technology to align with guardrails and communication
+    standards"
   characterName: Stacey
