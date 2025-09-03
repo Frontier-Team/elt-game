@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Amit-Vote 2
   m_EditorClassIdentifier: 
   characterImage: {fileID: 317004697, guid: fbc22b8a7b67215428b86e123c6b70f0, type: 3}
-  voteId: 1
+  voteId: 2
   voteSummary: 5 word summary
   voteDescription: Long form description
   characterName: Amit
