@@ -15,5 +15,5 @@ MonoBehaviour:
   characterImage: {fileID: -1343564371, guid: 44309817f427b3c499d2b4d5e2211bc2, type: 3}
   voteId: 11
   voteSummary: 
-  voteDescription: 
+  voteDescription: See our idea
   characterName: Simon

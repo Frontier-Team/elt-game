@@ -15,5 +15,5 @@ MonoBehaviour:
   characterImage: {fileID: -2037311440, guid: c0a587b78e31b704994f82e2b4d860b7, type: 3}
   voteId: 9
   voteSummary: 
-  voteDescription: 
+  voteDescription: See our idea
   characterName: Nick

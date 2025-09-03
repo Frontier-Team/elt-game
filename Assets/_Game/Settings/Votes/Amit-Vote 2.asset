@@ -15,5 +15,5 @@ MonoBehaviour:
   characterImage: {fileID: 317004697, guid: fbc22b8a7b67215428b86e123c6b70f0, type: 3}
   voteId: 2
   voteSummary: 
-  voteDescription: 
+  voteDescription: See our idea
   characterName: Amit
