@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterImage: {fileID: 1498785976, guid: d54a92ac53602c2499203b0a420a45ce, type: 3}
   voteId: 3
-  voteSummary: 5 word summary
-  voteDescription: Long form description
+  voteSummary: 
+  voteDescription: 
   characterName: Babs

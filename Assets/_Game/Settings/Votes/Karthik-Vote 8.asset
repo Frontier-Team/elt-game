@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterImage: {fileID: 233366162, guid: 5e568d32d99bcec4a8f9f2ad3bf3f16c, type: 3}
   voteId: 8
-  voteSummary: 5 word summary
-  voteDescription: Long form description
+  voteSummary: 
+  voteDescription: 
   characterName: Karthik

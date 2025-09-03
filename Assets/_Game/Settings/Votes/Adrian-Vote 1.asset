@@ -14,25 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterImage: {fileID: -2055147526, guid: 4527acccdabc67a48a3e2427a7f2224d, type: 3}
   voteId: 1
-  voteSummary: 5 word summary
-  voteDescription: Long form description Long form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form descriptionLong
-    form descriptionLong form descriptionLong form descriptionLong form description
+  voteSummary: 
+  voteDescription: 
   characterName: Adrian

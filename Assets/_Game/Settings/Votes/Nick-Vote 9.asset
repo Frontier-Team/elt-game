@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterImage: {fileID: -2037311440, guid: c0a587b78e31b704994f82e2b4d860b7, type: 3}
   voteId: 9
-  voteSummary: 5 word summary
-  voteDescription: Long form description
+  voteSummary: 
+  voteDescription: 
   characterName: Nick
